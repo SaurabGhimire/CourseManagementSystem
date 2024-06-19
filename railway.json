@@ -1,8 +1,7 @@
 {
     "$schema": "https://railway.app/railway.schema.json",
     "build": {
-      "builder": "NIXPACKS",
-      "buildCommand": "export JDK_VERSION=21 && ./mvnw clean install"
+      "builder": "NIXPACKS"
     },
     "deploy": {
       "runtime": "V2",
