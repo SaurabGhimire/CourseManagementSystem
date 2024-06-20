@@ -62,7 +62,7 @@ public class CourseOfferingController {
     public ResponseEntity<?> getCourseOfferingAttendance(@PathVariable("offeringId") int offeringId)
             throws CustomNotFoundException {
         // TODO: to be replaced by session-based student (student currently logged in)
-        Student student = studentService.getAllStudents().getFirst();
+        Student student = studentService.getStudentById(3).get();
 
         CourseOffering courseOffering = courseOfferingService.getCourseOfferingById(offeringId);
 
